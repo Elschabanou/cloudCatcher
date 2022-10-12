@@ -7,7 +7,7 @@ def get_weather(city: str) -> str:
         getLoc = loc.geocode(city)
     except:
         raise Exception("City not found")
-
+    # test
     latitude = getLoc.latitude
     longitude = getLoc.longitude
     api_key = "65e18d8ec814590c386dffb416021cc6S"
