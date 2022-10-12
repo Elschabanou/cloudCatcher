@@ -29,4 +29,4 @@ def get_weather(city: str) -> str:
     message = f"Hey ure weather in city will be {kind_of_weather}, with a temperature of {temperature} degree and a probability {probability_of_rain} of rain "
     print(message)
 
-get_weather("Stuttgart")
+

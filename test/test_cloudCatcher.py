@@ -1,5 +1,5 @@
 from operator import imod
 
 
-import cloudCatcher
+import weatherData
 import pytest
