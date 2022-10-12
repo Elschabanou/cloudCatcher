@@ -18,14 +18,14 @@ def get_weather(city: str) -> str:
     response = requests.get(request_url)
 
     response = {
-        "kind": "sunny",
-        "temperature": "10.0",
-        "rain_prob": "40", 
+        "weather": {"main":"sunny"},
+        "temp": "10.0",
+        "rain" :"40", 
     }
     #print(response)
-    kind_of_weather = response["kind"]
-    temperature = response["temperature"]
-    probability_of_rain = response["rain_prob"]
+    kind_of_weather = response["weather"]["main"]
+    temperature = response["temp"]
+    probability_of_rain = response["rain"]
     message = f"Hey ure weather in city will be {kind_of_weather}, with a temperature of {temperature} degree and a probability {probability_of_rain} of rain "
     print(message)
 
