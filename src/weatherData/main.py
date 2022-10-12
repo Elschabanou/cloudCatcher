@@ -26,7 +26,7 @@ def get_weather(city: str) -> str:
     kind_of_weather = response["weather"]["main"]
     temperature = response["temp"]
     probability_of_rain = response["rain"]
-    message = f"Hey ure weather in city will be {kind_of_weather}, with a temperature of {temperature} degree and a probability {probability_of_rain} of rain "
+    message = f"Hey ure weather in {city} will be {kind_of_weather}, with a temperature of {temperature} degree and a probability {probability_of_rain} of rain"
     print(message)
     return message
 
