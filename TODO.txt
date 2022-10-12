@@ -1,0 +1,5 @@
+- latitude, longitude for api
+- get location and change to longitude and latitude
+- urllib to api get jsonified 
+- read out data 
+- display data  
